@@ -1,0 +1,35 @@
+/* Páginas de formularios (se carga después de main.css y de katex.min.css) */
+.page-head{padding-block:clamp(2rem,6vw,4rem) 1.5rem}
+.page-head h1{font-size:clamp(2rem,6vw,3.2rem);margin:0 0 .75rem}
+.page-head p{margin:0;color:var(--muted);max-width:38rem}
+.crumb{display:inline-block;margin-bottom:1rem;font-family:var(--sans);font-size:.9rem}
+
+/* Índice de capítulos */
+.toc{display:flex;gap:.5rem;overflow-x:auto;scrollbar-width:none;padding-block:.25rem 1.5rem;font-family:var(--sans)}
+.toc::-webkit-scrollbar{display:none}
+.toc a{flex:none;border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem;color:var(--muted);font-size:.92rem}
+.toc a:hover{border-color:var(--teal);color:var(--text)}
+.toc b{color:var(--teal);font-weight:500;margin-right:.45rem}
+
+/* Capítulos */
+.chapter{padding-block:2rem 1rem;border-top:1px solid var(--line)}
+.chapter-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.5rem 1.5rem;margin-bottom:1.25rem}
+.chapter h2{display:flex;gap:.75rem;align-items:baseline}
+.ch-n{font-family:var(--sans);font-size:.95rem;font-weight:500;color:var(--teal)}
+.vid{font-family:var(--sans);font-size:.9rem}
+
+/* Fichas de fórmulas */
+.fx-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,22rem),1fr))}
+.fx{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1rem 1.15rem 1.1rem}
+.fx.wide{grid-column:1 / -1}
+.fx-head{display:flex;gap:.7rem;align-items:baseline;padding-bottom:.6rem;margin-bottom:.4rem;border-bottom:1px solid var(--line)}
+.fx-n{font-family:var(--sans);font-size:.85rem;font-weight:500;color:var(--teal)}
+.fx h3{margin:0;font-size:1.05rem}
+.fx p{margin:.5rem 0 0;font-size:1rem;line-height:1.6}
+.fx .note{color:var(--muted);font-size:.92rem}
+
+/* Ecuaciones: se desplazan en horizontal si no caben en el celular */
+.eq{overflow-x:auto;overflow-y:hidden;padding:.1rem 0}
+.eq .katex-display{margin:.55em 0}
+.eq .katex{font-size:1.3em}
+.eq.err{color:#f19a8a;font-family:monospace;white-space:pre-wrap}
