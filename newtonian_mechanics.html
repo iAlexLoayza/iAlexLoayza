@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es" data-title-es="Mecánica newtoniana · Formulario" data-title-en="Newtonian mechanics · Formulary">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#262624">
+    <title>Mecánica newtoniana · Formulario</title>
+    <link rel="icon" href="image/icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/formulas.css">
+    <script src="scripts/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+    <script defer src="scripts/math.js"></script>
+</head>
+<body>
+<header class="top">
+    <div class="bar wrap">
+        <a class="brand" href="index.html"><img src="image/icon.svg" alt="" width="28" height="28"><span>Luigi Loayza</span></a>
+        <button class="lang" id="lang" type="button" aria-label="Cambiar a inglés"><span class="es">EN</span><span class="en">ES</span></button>
+        <nav class="links">
+            <a href="index.html"><span class="es">Inicio</span><span class="en">Home</span></a>
+            <a href="formulae.html"><span class="es">Formularios</span><span class="en">Formulae</span></a>
+            <a href="https://www.youtube.com/channel/UChdHaXYIpDMcTOtntr1QF7g" target="_blank" rel="noopener"><span class="es">Canal</span><span class="en">Channel</span></a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-head wrap">
+        <a class="crumb" href="formulae.html"><span class="es">‹ Formularios</span><span class="en">‹ Formulae</span></a>
+        <h1><span class="es">Mecánica newtoniana</span><span class="en">Newtonian mechanics</span></h1>
+        <p class="es">Formulario basado en mi curso de YouTube.</p>
+        <p class="en">Formulary based on my YouTube course.</p>
+    </section>
+
+    <nav class="toc wrap" aria-label="Capítulos">
+        <a href="#cap-1"><b>1</b><span class="es">Sistemas de referencia</span><span class="en">Reference frames</span></a>
+        <a href="#cap-2"><b>2</b><span class="es">Posición, velocidad y aceleración</span><span class="en">Position, velocity and acceleration</span></a>
+        <a href="#cap-3"><b>3</b><span class="es">Coordenadas cilíndricas</span><span class="en">Cylindrical coordinates</span></a>
+    </nav>
+
+    <section class="chapter wrap" id="cap-1">
+        <div class="chapter-head">
+            <h2><span class="ch-n">1</span><span class="es">Sistemas de referencia</span><span class="en">Reference frames</span></h2>
+            <a class="vid" href="https://youtu.be/W_rs-ZeB9pI?list=PLMyBM3S_H4tNAVzl6xw3jNl9q7OM-pzlS" target="_blank" rel="noopener"><span class="es">Ver video</span><span class="en">Watch video</span></a>
+        </div>
+        <div class="fx-grid">
+            <article class="fx" id="f-1-1">
+                <div class="fx-head"><span class="fx-n">1.1</span><h3><span class="es">Sistema de referencia</span><span class="en">Reference frame</span></h3></div>
+                <p class="es">Sea $A$ un espacio afín con espacio director $E$, y sea $B$ una base de $E$. Un sistema de referencia es un par $(O,B)$ con $O\in A$; el punto $O$ se llama origen.</p>
+                <p class="en">Let $A$ be an affine space with direction space $E$, and let $B$ be a basis of $E$. A reference frame is a pair $(O,B)$ with $O\in A$; the point $O$ is called the origin.</p>
+            </article>
+            <article class="fx" id="f-1-2">
+                <div class="fx-head"><span class="fx-n">1.2</span><h3><span class="es">Coordenadas afines</span><span class="en">Affine coordinates</span></h3></div>
+                <p class="es">Dado un sistema de referencia $(O,B)$ con $B=\{\e{1},\dots,\e{n}\}$ y un punto $P\in A$, existen únicos escalares $\lambda_1,\dots,\lambda_n$ tales que</p>
+                <p class="en">Given a reference frame $(O,B)$ with $B=\{\e{1},\dots,\e{n}\}$ and a point $P\in A$, there exist unique scalars $\lambda_1,\dots,\lambda_n$ such that</p>
+                <div class="eq">\overrightarrow{OP}=\sum_{i=1}^{n}\lambda_i\,\e{i}</div>
+                <p class="es note">Los escalares $\lambda_i$ se llaman las coordenadas de $P$.</p>
+                <p class="en note">The scalars $\lambda_i$ are called the coordinates of $P$.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="chapter wrap" id="cap-2">
+        <div class="chapter-head">
+            <h2><span class="ch-n">2</span><span class="es">Posición, velocidad y aceleración</span><span class="en">Position, velocity and acceleration</span></h2>
+            <a class="vid" href="https://youtu.be/U-6Ac75n-hQ?list=PLMyBM3S_H4tNAVzl6xw3jNl9q7OM-pzlS" target="_blank" rel="noopener"><span class="es">Ver video</span><span class="en">Watch video</span></a>
+        </div>
+        <div class="fx-grid">
+            <article class="fx" id="f-2-1">
+                <div class="fx-head"><span class="fx-n">2.1</span><h3><span class="es">Movimiento y posición</span><span class="en">Motion and position</span></h3></div>
+                <div class="eq">\begin{array}{rccl}\v{r}\colon & \RR & \to & \RR^{3}\\ & t & \mapsto & \v{r}(t)\end{array}</div>
+            </article>
+            <article class="fx" id="f-2-2">
+                <div class="fx-head"><span class="fx-n">2.2</span><h3><span class="es">Velocidad y aceleración medias</span><span class="en">Average velocity and acceleration</span></h3></div>
+                <div class="eq">\v{v}_{\mathrm{m}}(t)=\frac{\Delta\v{r}}{\Delta t}</div>
+                <div class="eq">\v{a}_{\mathrm{m}}(t)=\frac{\Delta\v{v}}{\Delta t}</div>
+            </article>
+            <article class="fx" id="f-2-3">
+                <div class="fx-head"><span class="fx-n">2.3</span><h3><span class="es">Velocidad instantánea</span><span class="en">Instantaneous velocity</span></h3></div>
+                <div class="eq">\v{v}(t)=\dv{\v{r}}{t}=\dot{\v{r}}(t)</div>
+                <div class="eq">\dot{\v{r}}=v\,\e{t}=\dv{s}{t}\,\e{t}</div>
+            </article>
+            <article class="fx" id="f-2-4">
+                <div class="fx-head"><span class="fx-n">2.4</span><h3><span class="es">Aceleración instantánea</span><span class="en">Instantaneous acceleration</span></h3></div>
+                <div class="eq">\v{a}(t)=\dvv{\v{r}}{t}=\ddot{\v{r}}(t)</div>
+                <div class="eq">\ddot{\v{r}}=\dv{v}{t}\,\e{t}+\frac{v^{2}}{\rho}\,\e{n}</div>
+            </article>
+            <article class="fx wide" id="f-2-5">
+                <div class="fx-head"><span class="fx-n">2.5</span><h3><span class="es">Curvatura y radio de curvatura</span><span class="en">Curvature and radius of curvature</span></h3></div>
+                <div class="eq">\kappa=\frac{1}{\rho}=\abs{\dv{\e{t}}{s}}</div>
+                <div class="eq">\rho=\frac{\abs{\dot{\v{r}}}^{3}}{\abs{\dot{\v{r}}\times\ddot{\v{r}}}}=\frac{v^{3}}{\abs{\v{v}\times\v{a}}}</div>
+                <div class="eq">\rho(x)=\frac{\bigl[1+y'(x)^{2}\bigr]^{3/2}}{\abs{y''(x)}}</div>
+                <p class="es note">La última expresión vale para una curva dada como $y=y(x)$.</p>
+                <p class="en note">The last expression holds for a curve given as $y=y(x)$.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="chapter wrap" id="cap-3">
+        <div class="chapter-head">
+            <h2><span class="ch-n">3</span><span class="es">Coordenadas cilíndricas</span><span class="en">Cylindrical coordinates</span></h2>
+        </div>
+        <div class="fx-grid">
+            <article class="fx" id="f-3-1">
+                <div class="fx-head"><span class="fx-n">3.1</span><h3><span class="es">Cambio de coordenadas</span><span class="en">Change of coordinates</span></h3></div>
+                <div class="eq">\begin{aligned}x&=R\cos\phi\\ y&=R\sin\phi\\ z&=z\end{aligned}</div>
+            </article>
+            <article class="fx" id="f-3-2">
+                <div class="fx-head"><span class="fx-n">3.2</span><h3><span class="es">Matriz de cambio de base</span><span class="en">Change-of-basis matrix</span></h3></div>
+                <div class="eq">\begin{pmatrix}\e{R}\\ \e{\phi}\\ \e{z}\end{pmatrix}=\begin{pmatrix}\cos\phi&\sin\phi&0\\ -\sin\phi&\cos\phi&0\\ 0&0&1\end{pmatrix}\begin{pmatrix}\e{x}\\ \e{y}\\ \e{z}\end{pmatrix}</div>
+            </article>
+            <article class="fx" id="f-3-3">
+                <div class="fx-head"><span class="fx-n">3.3</span><h3><span class="es">Derivadas temporales</span><span class="en">Time derivatives</span></h3></div>
+                <div class="eq">\edot{R}=\dot{\phi}\,\e{\phi}</div>
+                <div class="eq">\edot{\phi}=-\dot{\phi}\,\e{R}</div>
+            </article>
+            <article class="fx wide" id="f-3-4">
+                <div class="fx-head"><span class="fx-n">3.4</span><h3><span class="es">Posición, velocidad y aceleración</span><span class="en">Position, velocity and acceleration</span></h3></div>
+                <div class="eq">\begin{aligned}
+\v{r}&=R\,\e{R}+z\,\e{z}\\[4pt]
+\dot{\v{r}}&=\dot{R}\,\e{R}+R\dot{\phi}\,\e{\phi}+\dot{z}\,\e{z}\\[4pt]
+\ddot{\v{r}}&=\bigl(\ddot{R}-R\dot{\phi}^{2}\bigr)\e{R}+\bigl(R\ddot{\phi}+2\dot{R}\dot{\phi}\bigr)\e{\phi}+\ddot{z}\,\e{z}
+\end{aligned}</div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="wrap">
+    <p>&copy; 2026 Luigi Alexander Loayza-Montesinos</p>
+    <p class="motto es">La curiosidad se encuentra con la razón</p>
+    <p class="motto en">Curiosity meets reason</p>
+</footer>
+</body>
+</html>

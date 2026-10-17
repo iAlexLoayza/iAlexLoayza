@@ -1,72 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iAlexLoayza</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#262624">
+    <title>Luigi Alexander Loayza-Montesinos</title>
+    <meta name="description" content="Matemática y física matemática · Mathematics and mathematical physics">
     <link rel="icon" href="image/icon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <p class="logo">iAlexLoayza</p>
-            <nav>
-                <img src="image/icon.svg" alt="Descripción de la imagen">
-                <a href="#hero">Inicio</a>
-                <a href="https://www.youtube.com/channel/UChdHaXYIpDMcTOtntr1QF7g", target="_blank">Canal</a>
-                <a href="#enlaces">Recursos</a>
-            </nav>
-        </div>
-    </header>
 
-    <section id="hero">
-        <h1>La curiosidad se encuentra con la razón</h1>
-        <form action="https://www.youtube.com/channel/UChdHaXYIpDMcTOtntr1QF7g", target="_blank">
-            <button>Descubre más en mi canal</button>
-        </form>
+<header class="top">
+    <div class="bar wrap">
+        <a class="brand" href="#top">
+            <img src="image/icon.svg" alt="" width="28" height="28">
+            <span>Luigi Loayza</span>
+        </a>
+        <button class="lang" id="lang" type="button" aria-label="Cambiar a inglés">
+            <span class="es">EN</span><span class="en">ES</span>
+        </button>
+        <nav class="links">
+            <a href="#sobre-mi"><span class="es">Sobre mí</span><span class="en">About</span></a>
+            <a href="#intereses"><span class="es">Intereses</span><span class="en">Interests</span></a>
+            <a href="#trayectoria"><span class="es">Trayectoria</span><span class="en">Background</span></a>
+            <a href="#recursos"><span class="es">Recursos</span><span class="en">Resources</span></a>
+            <a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero wrap" id="top">
+        <div class="hero-text">
+            <h1>Luigi Alexander<br>Loayza-Montesinos</h1>
+            <p class="role">
+                <span class="es">Estudiante de magíster en Matemática, Universidad de Talca</span>
+                <span class="en">MSc student in Mathematics, University of Talca</span>
+            </p>
+            <p class="lead es">Estudio matemática desde la física. Me interesa la conexión entre ambas y las estructuras, a veces geométricas, algebraicas o topológicas, que aparecen en ese cruce.</p>
+            <p class="lead en">I study mathematics coming from physics. I am interested in the connection between the two, and in the structures, at times geometric, algebraic or topological, that arise where they meet.</p>
+            <div class="actions">
+                <a class="btn primary" href="#intereses"><span class="es">Ver intereses</span><span class="en">See interests</span></a>
+                <a class="btn" href="formulae.html"><span class="es">Formularios</span><span class="en">Formulae</span></a>
+            </div>
+        </div>
+        <figure class="portrait">
+            <img src="image/luigi_1.jpg" alt="Luigi Alexander Loayza-Montesinos" onerror="this.closest('figure').hidden=true">
+        </figure>
     </section>
 
-    <section id="sobre-mi">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-            <h2>Sobre <span class="color-acento">mí<span></span></h2>
-            <p>Soy Luigi Alexander Loayza M., estudiante de física en la Escuela Politécnica Nacional de Quito, Ecuador. Este sitio web tiene como objetivo compartir información valiosa como apuntes, exámenes, tareas y formularios que he recopilado a lo largo de mi carrera universitaria. Mi meta es proporcionar recursos tanto para estudiantes de física como para aquellos que están empezando en este campo, facilitando su acercamiento a esta disciplina.</p>
-            <p>Mis intereses académicos se centran en la física matemática, y considero la posibilidad de crear listas de reproducción en mi canal que estén más relacionadas con este aspecto en el futuro.</p>
+    <section class="block wrap" id="sobre-mi">
+        <h2><span class="es">Sobre mí</span><span class="en">About</span></h2>
+        <div class="body">
+            <div class="es">
+                <p>Soy físico por la Escuela Politécnica Nacional de Quito, Ecuador, y curso el magíster en Matemática en el Instituto de Matemática de la Universidad de Talca, Chile, bajo la dirección de Jan Felipe van Diejen.</p>
+                <p>Llegué a la física por la teoría de cuerdas y me quedé con su lado matemático: las estructuras que aparecen al formalizar una teoría física y las conexiones inesperadas entre áreas.</p>
+                <p>También enseño: soy ayudante de matemáticas en cursos de pregrado. Este sitio reúne los formularios, apuntes y ejercicios que preparé y recopilé durante mi época de estudiante, junto con mi canal de YouTube.</p>
+            </div>
+            <div class="en">
+                <p>I am a physicist from the Escuela Politécnica Nacional in Quito, Ecuador, and I am doing the MSc in Mathematics at the Institute of Mathematics of the University of Talca, Chile, under the supervision of Jan Felipe van Diejen.</p>
+                <p>I came to physics through string theory and stayed for its mathematical side: the structures that appear when a physical theory is formalized, and the unexpected connections between areas.</p>
+                <p>I also teach: I am a teaching assistant for undergraduate mathematics courses. This site gathers the formulae, notes and exercises I prepared and collected during my student years, together with my YouTube channel.</p>
             </div>
         </div>
     </section>
 
-    <section id="enlaces">
-        <nav class="container">
-            <h2>Recursos</h2>
-            <div class="interes">
-                <div class="carta">
-                    <h3>Formularios</h3>
-                    <p>Formularios creados a partir de los cursos de mi canal de YouTube y otros basados en textos que he estudiado durante mis clases universitarias.</p>
-                    <form action="formulae.html">
-                        <button>Saber más</button>
-                    </form>
-                </div>
-                <div class="carta">
-                    <h3>Ejercicios resueltos</h3>
-                    <p>Ejercicios que incluyen tareas realizadas durante mi carrera, así como aquellos creados para mi canal de YouTube y los que desarrollo durante mis horas de estudio.</p>
-                    <button>Saber más</button>
-                </div>
-                <div class="carta">
-                    <h3>Apuntes</h3>
-                    <p>Apuntes de mis cursos universitarias, horas de estudio y YouTube, así como otros elaborados por profesores de quien he recibido clases.</p>
-                    <button>Saber más</button>
-                </div>
-            <div>
-        </nav>
+    <section class="block wrap" id="intereses">
+        <h2><span class="es">Intereses</span><span class="en">Interests</span></h2>
+        <ul class="body interests">
+            <li>
+                <h3><span class="es">Física matemática</span><span class="en">Mathematical physics</span></h3>
+                <p class="es">Me atrae el lado matemático de la física y la manera en que estructuras abstractas terminan describiendo la naturaleza.</p>
+                <p class="en">I am drawn to the mathematical side of physics, and to how abstract structures end up describing nature.</p>
+            </li>
+            <li>
+                <h3><span class="es">Teoría conforme de campos</span><span class="en">Conformal field theory</span></h3>
+                <p class="es">Mi trabajo de titulación, de carácter monográfico, me acercó a la teoría conforme de campos en el contexto de la teoría de cuerdas. Hoy trabajo en la dualidad rango–nivel y las reglas de fusión.</p>
+                <p class="en">My monographic degree project introduced me to conformal field theory in the context of string theory. Today I work on rank–level duality and fusion rules.</p>
+            </li>
+            <li>
+                <h3><span class="es">Teoría de representaciones</span><span class="en">Representation theory</span></h3>
+                <p class="es">Me interesa su lectura en física, donde las representaciones se interpretan como estados y partículas.</p>
+                <p class="en">I am interested in its reading in physics, where representations are interpreted as states and particles.</p>
+            </li>
+        </ul>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; iAlexLoayza 2024</p>
+    <section class="block wrap" id="trayectoria">
+        <h2><span class="es">Trayectoria</span><span class="en">Background</span></h2>
+        <ol class="body timeline">
+            <li>
+                <p class="when"><span class="es">2026 – presente</span><span class="en">2026 – present</span></p>
+                <h3><span class="es">Magíster en Matemática</span><span class="en">MSc in Mathematics</span></h3>
+                <p class="org">Instituto de Matemática, Universidad de Talca, Chile</p>
+                <p class="adv es">Director de tesis: Jan Felipe van Diejen</p>
+                <p class="adv en">Thesis advisor: Jan Felipe van Diejen</p>
+            </li>
+            <li>
+                <p class="when"><span class="es">2026 – presente</span><span class="en">2026 – present</span></p>
+                <h3><span class="es">Ayudante de docencia</span><span class="en">Teaching assistant</span></h3>
+                <p class="org">Universidad de Talca</p>
+                <p class="es">Clases de matemáticas en cursos de pregrado de carreras con requerimiento mínimo de matemáticas.</p>
+                <p class="en">Mathematics classes in undergraduate courses for programs with minimal mathematical requirements.</p>
+            </li>
+            <li>
+                <p class="when"><span class="es">En preparación</span><span class="en">Forthcoming</span></p>
+                <h3><span class="es">Ilustrador de un libro de topología</span><span class="en">Illustrator of a topology book</span></h3>
+                <p class="es">Ilustraciones de un libro de topología con enfoque categórico, que se enviará a una editorial.</p>
+                <p class="en">Illustrations for a book on topology with a categorical approach, to be submitted to a publisher.</p>
+            </li>
+            <li>
+                <p class="when">2025 – 2026</p>
+                <h3><span class="es">Escuelas y workshops</span><span class="en">Schools and workshops</span></h3>
+                <ul class="events">
+                    <li>
+                        <span class="ev-year">2026</span>
+                        <p class="ev-title"><span class="es">Workshop Klein: Álgebra y Geometría</span><span class="en">Klein Workshop: Algebra and Geometry</span></p>
+                        <p class="ev-org"><span class="es">Instituto de Matemática, Universidad de Talca</span><span class="en">Institute of Mathematics, University of Talca</span></p>
+                        <p class="ev-place">Talca, Chile</p>
+                    </li>
+                    <li>
+                        <span class="ev-year">2025</span>
+                        <p class="ev-title"><span class="es">Escuela de Invierno</span><span class="en">Winter School</span></p>
+                        <p class="ev-org"><span class="es">Instituto de Matemática, Universidad de Talca</span><span class="en">Institute of Mathematics, University of Talca</span></p>
+                        <p class="ev-place">Talca, Chile</p>
+                    </li>
+                    <li>
+                        <span class="ev-year">2025</span>
+                        <p class="ev-title"><span class="es">XXVII Escuela de Invierno J. J. Giambiagi: Holografía, agujeros negros y teoría de la información</span><span class="en">XXVII J. J. Giambiagi Winter School: Holography, Black Holes and Information Theory</span></p>
+                        <p class="ev-org"><span class="es">Departamento de Física, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires</span><span class="en">Department of Physics, Faculty of Exact and Natural Sciences, University of Buenos Aires</span></p>
+                        <p class="ev-place">Buenos Aires, Argentina</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="when">2020 – 2026</p>
+                <h3><span class="es">Título de Físico</span><span class="en">Physics degree</span></h3>
+                <p class="org">Escuela Politécnica Nacional, Quito, Ecuador</p>
+                <p class="work-label es">Trabajo de titulación</p>
+                <p class="work-label en">Degree project</p>
+                <p class="work-title es">Cálculo del espectro de la cuerda bosónica y obtención de la teoría de campos efectiva a bajas energías. Sector de cuerda cerrada.</p>
+                <p class="work-title en">Computation of the bosonic string spectrum and derivation of the low-energy effective field theory. Closed-string sector.</p>
+                <p class="adv es">Director: Álvaro Dueñas Vidal</p>
+                <p class="adv en">Advisor: Álvaro Dueñas Vidal</p>
+            </li>
+        </ol>
+    </section>
+
+    <section class="block wrap" id="recursos">
+        <h2><span class="es">Recursos</span><span class="en">Resources</span></h2>
+        <div class="body resources">
+            <a class="res" href="formulae.html">
+                <h3><span class="es">Formularios</span><span class="en">Formulae</span></h3>
+                <p class="es">Mecánica newtoniana, electrodinámica clásica y teoría de cuerdas, con enunciados y fórmulas listos para consultar.</p>
+                <p class="en">Newtonian mechanics, classical electrodynamics and string theory, with statements and formulae ready for quick reference.</p>
+            </a>
+            <a class="res" href="https://www.youtube.com/channel/UChdHaXYIpDMcTOtntr1QF7g" target="_blank" rel="noopener">
+                <h3><span class="es">Canal de YouTube</span><span class="en">YouTube channel</span></h3>
+                <p class="es">Cursos de mecánica newtoniana y electrodinámica clásica, en español.</p>
+                <p class="en">Courses on Newtonian mechanics and classical electrodynamics, in Spanish.</p>
+            </a>
+            <div class="res soon">
+                <h3><span class="es">Ejercicios resueltos</span><span class="en">Solved exercises</span></h3>
+                <p class="es">Próximamente.</p>
+                <p class="en">Coming soon.</p>
+            </div>
+            <div class="res soon">
+                <h3><span class="es">Apuntes</span><span class="en">Notes</span></h3>
+                <p class="es">Próximamente.</p>
+                <p class="en">Coming soon.</p>
+            </div>
         </div>
-    </footer>
+    </section>
+
+    <section class="block wrap" id="contacto">
+        <h2><span class="es">Contacto</span><span class="en">Contact</span></h2>
+        <div class="body">
+            <p class="es">Para consultas sobre los materiales de este sitio, o sobre matemática y física, escríbeme.</p>
+            <p class="en">For questions about the material on this site, or about mathematics and physics, write to me.</p>
+            <ul class="contact">
+                <li><span class="c-label"><span class="es">Correo</span><span class="en">Email</span></span><a href="mailto:luigi.loayza@utalca.cl">luigi.loayza@utalca.cl</a></li>
+                <li><span class="c-label">YouTube</span><a href="https://www.youtube.com/channel/UChdHaXYIpDMcTOtntr1QF7g" target="_blank" rel="noopener">iAlexLoayza</a></li>
+                <li><span class="c-label">Instagram</span><a href="https://www.instagram.com/ialexloayza/" target="_blank" rel="noopener">@ialexloayza</a></li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="wrap">
+    <p>&copy; 2026 Luigi Alexander Loayza-Montesinos</p>
+    <p class="motto es">La curiosidad se encuentra con la razón</p>
+    <p class="motto en">Curiosity meets reason</p>
+</footer>
+
 </body>
 </html>
